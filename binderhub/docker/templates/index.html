@@ -1,9 +1,9 @@
-{% extends "index_base.html" %}
+{% extends "templates/index.html" %}
 
 {% block main %}
   <div class="row">
     <div id="logo-container">
-      <img id="logo" src="{{static_url("logo.svg")}}" width="390px"  />
+      <img id="logo" src="/binder/extra_static/gs_home_logo_en.svg" width="390px"  />
     </div>
   </div>
   <div class="row">
@@ -13,7 +13,7 @@
       <div id="header" class="text-center">
 {#        <h3>Turn a GitHub repo into a collection of interactive notebooks</h3>#}
         <div id="explanation">
-          Have a repository full of Jupyter notebooks? With Binder, open those notebooks in an executable environment, making your code immediately reproducible by anyone, anywhere.
+          -{{ test_var }}-Have a repository full of Jupyter notebooks? With Binder, open those notebooks in an executable environment, making your code immediately reproducible by anyone, anywhere.
         </div>
       </div>
 

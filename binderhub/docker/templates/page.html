@@ -15,7 +15,7 @@
 {#  <script src="/static/vendor/bootstrap/js/bootstrap.min.js"></script>#}
   <link href="/static/vendor/bootstrap/css/bootstrap.min.css" rel="stylesheet" />
 {#  <link href="/static/vendor/bootstrap/css/bootstrap-theme.min.css" rel="stylesheet" />#}
-  <link href="/static/notebooks.css" rel="stylesheet" />
+  <link href="/binder/extra_static/notebooks.css" rel="stylesheet" />
   <link id="favicon" rel="shortcut icon" type="image/png" href="/static/images/logo/logo.png" />
   {% endblock head %}
 
@@ -56,7 +56,7 @@
 </head>
 <body>
     {% block body %}
-    {% block header %}
+    {% block page_header %}
     <header style="background-color: #333;">
       <div role="navigation" class="navbar navbar-default navbar-static-top">
           <div style="background-color: #333;">
@@ -152,7 +152,7 @@
           </div>
       </div>
     </header>
-    {% endblock header %}
+    {% endblock page_header %}
 
     <div id="main-container" class="container">
         <div class="row">
